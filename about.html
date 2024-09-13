@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueWave Aviation</title>
+    <link rel="shortcut icon" href="https://cdn.leonardo.ai/users/312ca1ba-044b-4193-a505-805b21e3ad52/generations/3ea461df-038a-47c7-9345-af840204e0d8/users/312ca1ba-044b-4193-a505-805b21e3ad52/generations/3ea461df-038a-47c7-9345-af840204e0d8/_2.jpg" type="image/x-icon">
+    <style>
+        body {
+            background-color: #111827;
+            color: #e5e7eb;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #111827;
+            padding: 20px 0;
+            color: #e5e7eb;
+        }
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-logo {
+            display: flex;
+            align-items: center;
+        }
+        .header-logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        .header-logo a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        nav a {
+            color: #e5e7eb;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            color: #ffffff;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 0 20px;
+        }
+        h2 {
+            color: #ffffff;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .about-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            background-color: #1f2937;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .team-member img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 120px;
+            height: 120px;
+        }
+        .team-member h3 {
+            margin: 0;
+            color: #ffffff;
+        }
+        .team-member p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="https://cdn.leonardo.ai/users/312ca1ba-044b-4193-a505-805b21e3ad52/generations/3ea461df-038a-47c7-9345-af840204e0d8/users/312ca1ba-044b-4193-a505-805b21e3ad52/generations/3ea461df-038a-47c7-9345-af840204e0d8/_2.jpg" alt="BlueWave Aviation Logo">
+                <a href="index.html">BlueWave Aviation</a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="service.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1>About Us</h1>
+        <img src="_3 (1).jpg" alt="BlueWave Aviation" class="about-image">
+        <p>Welcome to BlueWave Aviation! We are dedicated to revolutionizing air travel with cutting-edge technology and unmatched service. Our commitment is to deliver an exceptional experience on every flight, blending comfort and innovation seamlessly.</p>
+        
+        <h2>Our History</h2>
+        <p>Founded in [Year], BlueWave Aviation has evolved into a global leader in aviation. Our growth is a testament to our dedication to quality and customer satisfaction, driven by our innovative approach to air travel.</p>
+
+        <h2>Our Mission</h2>
+        <p>At BlueWave Aviation, our mission is to provide superior air travel experiences. We are committed to using the latest technology and delivering personalized service to ensure every journey is exceptional.</p>
+        
+        <h2>Meet the Team</h2>
+        <div class="team-member">
+            <img src="jhon.jpg" alt="Shahrukh Javed">
+            <div>
+                <h3>Shahrukh Javed</h3>
+                <p><strong>CEO & Founder</strong></p>
+                <p>Shahrukh Javed leads our team with a vision for excellence and innovation. With over 20 years of experience in aviation, he is dedicated to ensuring the highest standards in every aspect of our service.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="dua.jpg" alt="DUA Sheikh">
+            <div>
+                <h3>DUA Sheikh</h3>
+                <p><strong>Chief Operating Officer</strong></p>
+                <p>DUA Sheikh oversees our daily operations, ensuring smooth and efficient flights. Her focus on operational excellence guarantees a seamless experience for all our passengers.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https://cdn.leonardo.ai/users/312ca1ba-044b-4193-a505-805b21e3ad52/generations/3ea461df-038a-47c7-9345-af840204e0d8/users/312ca1ba-044b-4193-a505-805b21e3ad52/generations/3ea461df-038a-47c7-9345-af840204e0d8/_2.jpg"
+  intent="WELCOME"
+  chat-title="BlueWaveAviation Assistant"
+  agent-id="c1a15a1b-9f2e-48d1-93c8-67ac6ccebbee"
+  language-code="en"
+  style="--df-messenger-bot-message: #1e3a8a; 
+         --df-messenger-button-titlebar-color: #1e3a8a; 
+         --df-messenger-chat-background-color: #111827; 
+         --df-messenger-font-color: #fff; 
+         --df-messenger-send-icon: #1e3a8a; 
+         --df-messenger-user-message: #374151;">
+</df-messenger>
+
+</body>
+</html>

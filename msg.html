@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us - BlueWave Aviation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111827; /* Background color to match website */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #111827;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #111827;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .btn-submit {
+            background-color: #1e3a8a;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-submit:hover {
+            background-color: #374151;
+        }
+
+        /* Chatbot Custom Styling */
+        df-messenger {
+            --df-messenger-bot-message: #1e3a8a; /* Bubble color for bot messages */
+            --df-messenger-button-titlebar-color: #1e3a8a; /* Title bar color */
+            --df-messenger-chat-background-color: #111827; /* Background for the chat window */
+            --df-messenger-font-color: #fff; /* Font color in the chat */
+            --df-messenger-send-icon: #1e3a8a; /* Send icon color */
+            --df-messenger-user-message: #374151; /* User message bubble color */
+        }
+
+        /* Positioning the chatbot to the bottom right */
+        df-messenger {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you. Please fill out the form below and we'll get back to you as soon as possible.</p>
+        
+        <form action="contact-form-handler.php" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Embed Chatbot Script -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-icon="https://cdn.leonardo.ai/users/312ca1ba-044b-4193-a505-805b21e3ad52/generations/3ea461df-038a-47c7-9345-af840204e0d8/users/312ca1ba-044b-4193-a505-805b21e3ad52/generations/3ea461df-038a-47c7-9345-af840204e0d8/_2.jpg"
+      intent="WELCOME"
+      chat-title="BlueWaveAviation-Assistant"
+      agent-id="c1a15a1b-9f2e-48d1-93c8-67ac6ccebbee"
+      language-code="en"
+    ></df-messenger>
+
+</body>
+</html>
